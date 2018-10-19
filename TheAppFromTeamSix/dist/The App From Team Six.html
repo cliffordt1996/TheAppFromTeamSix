@@ -1,0 +1,48 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'The App From Team Six.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJUaGUgQXBwIEZyb20gVGVhbSBTaXguam5scCI+CiAgPGluZm9ybWF0aW9uPgogICAgPHRpdGxlPlRoZSBBcHAgRnJvbSBUZWFtIFNpeDwvdGl0bGU+CiAgICA8dmVuZG9yPlRob21hcyBDbGlmZm9yZCwgTmF0ZSBJcndpbiwgVHJveSBOYW5jZSwgRHlsYW4gV2ViYjwvdmVuZG9yPgogICAgPGRlc2NyaXB0aW9uPm51bGw8L2Rlc2NyaXB0aW9uPgogICAgPG9mZmxpbmUtYWxsb3dlZC8+CiAgPC9pbmZvcm1hdGlvbj4KICA8cmVzb3VyY2VzPgogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPgogICAgPGphciBocmVmPSJUaGVBcHBGcm9tVGVhbVNpeC5qYXIiIHNpemU9IjEwOTQ3NiIgZG93bmxvYWQ9ImVhZ2VyIiAvPgogICAgPGphciBocmVmPSJsaWIvYmVhbnNiaW5kaW5nLTEuMi4xLmphciIgc2l6ZT0iNjMxMjg5IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgPC9yZXNvdXJjZXM+CiAgPGFwcGxpY2F0aW9uLWRlc2MgbWFpbi1jbGFzcz0iTGF1bmNoIiAgbmFtZT0iVGhlIEFwcCBGcm9tIFRlYW0gU2l4IiA+CiAgPC9hcHBsaWNhdGlvbi1kZXNjPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedLaunch() {
+        dtjava.embed(
+            {
+                id : 'Launch',
+                toolkit : 'swing',
+                url : 'The App From Team Six_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPGpubHAgc3BlYz0iMS4wIiB4bWxuczpqZng9Imh0dHA6Ly9qYXZhZnguY29tIiBocmVmPSJUaGUgQXBwIEZyb20gVGVhbSBTaXhfYnJvd3Nlci5qbmxwIj4KICA8aW5mb3JtYXRpb24+CiAgICA8dGl0bGU+VGhlIEFwcCBGcm9tIFRlYW0gU2l4PC90aXRsZT4KICAgIDx2ZW5kb3I+VGhvbWFzIENsaWZmb3JkLCBOYXRlIElyd2luLCBUcm95IE5hbmNlLCBEeWxhbiBXZWJiPC92ZW5kb3I+CiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+CiAgICA8b2ZmbGluZS1hbGxvd2VkLz4KICA8L2luZm9ybWF0aW9uPgogIDxyZXNvdXJjZXM+CiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+CiAgICA8amFyIGhyZWY9IlRoZUFwcEZyb21UZWFtU2l4LmphciIgc2l6ZT0iMTA5NDc2IiBkb3dubG9hZD0iZWFnZXIiIC8+CiAgICA8amFyIGhyZWY9ImxpYi9iZWFuc2JpbmRpbmctMS4yLjEuamFyIiBzaXplPSI2MzEyODkiIGRvd25sb2FkPSJlYWdlciIgLz4KICA8L3Jlc291cmNlcz4KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJMYXVuY2giICBuYW1lPSJUaGUgQXBwIEZyb20gVGVhbSBTaXgiID4KICA8L2FwcGxldC1kZXNjPgogIDx1cGRhdGUgY2hlY2s9ImFsd2F5cyIvPgo8L2pubHA+Cg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedLaunch);
+</script>
+
+</head><body>
+<h2>Test page for <b>The App From Team Six</b></h2>
+  <b>Webstart:</b> <a href='The App From Team Six.jnlp' onclick="return launchApplication('The App From Team Six.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
